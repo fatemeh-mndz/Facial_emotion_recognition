@@ -1,5 +1,7 @@
 
 #Emotional Face Prediction Project
+
+
 Project Overview
 This project focuses on Emotional Face Prediction using various machine learning and deep learning techniques. The aim is to classify human emotions based on facial expressions. The project leverages a combination of traditional machine learning algorithms and advanced deep learning architectures, including Convolutional Neural Networks (CNN) and Transfer Learning, to achieve high accuracy in emotion classification.
 
