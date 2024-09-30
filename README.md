@@ -1,5 +1,5 @@
 
-#Emotional Face Prediction Project
+#Facial_emotion_recognition Project
 
 
 Project Overview
