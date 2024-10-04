@@ -1,4 +1,3 @@
-
 # Facial Emotion Recognition Project
 
 ## Project Overview
@@ -62,7 +61,10 @@ Pre-trained models such as **VGG** and **ResNet50** were used to take advantage 
 The deep learning models, especially CNNs and Transfer Learning models, significantly outperformed traditional machine learning algorithms in terms of both **accuracy** and **generalization**. Among the deep learning models, Transfer Learning with fine-tuning achieved the best results, demonstrating the power of leveraging pre-trained models.
 
 - **Best CNN Model Accuracy**: ~90%
-- **Best Transfer Learning Model Accuracy**: ~93%
+- **Best Transfer Learning Model Accuracy (ResNet50)**: ~93%
+- **VGG Model Results**:
+  - **Validation Accuracy**: 90%
+  - **Training Accuracy**: 78%
 
 ## Technologies Used
 - **Languages**: Python
@@ -75,6 +77,7 @@ The deep learning models, especially CNNs and Transfer Learning models, signific
 - **Tools**: Jupyter Notebook
 
 ## Conclusion
-The project successfully implemented various machine learning and deep learning techniques to classify human emotions based on facial expressions. Transfer Learning, with its fine-tuning capabilities, provided the best results, showing that pre-trained models can be highly effective in small, specialized datasets.
+The project successfully implemented various machine learning and deep learning techniques to classify human emotions based on facial expressions. Transfer Learning, with its fine-tuning capabilities, provided the best results, showing that pre-trained models can be highly effective in small, specialized datasets. The VGG model also performed well with a validation accuracy of 90%.
+
 
 
