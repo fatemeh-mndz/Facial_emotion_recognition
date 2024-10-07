@@ -1,4 +1,7 @@
 # Facial Emotion Recognition Project
+![alt text](image.png)
+
+
 
 ## Project Overview
 This project focuses on **predicting human emotions** from facial expressions using various **machine learning** and **deep learning** techniques. The goal is to classify different human emotions based on facial images. This project leverages a combination of:
