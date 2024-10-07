@@ -3,6 +3,27 @@
 
 
 
+
+## Model Performance Metrics
+
+This section provides an overview of the performance metrics for various machine learning and deep learning models used in our projects. The metrics include accuracy and validation scores, which highlight the effectiveness of each model.
+
+| **Model**                       | **Accuracy**       | **Validation Score** |
+|---------------------------------|--------------------|----------------------|
+| Random Forest (ML Algorithm)    | 99%                | 25%                  |
+| ANN (ML Algorithm)              | 91%                | 18%                  |
+| Deep Learning Model              | 40%                | 70%                  |
+| Transfer Learning (ResNet)      | 93%                | 90%                  |
+| Transfer Learning (VGG)         | 90%                | 78%                  |
+
+
+
+
+
+
+
+
+
 ## Project Overview
 This project focuses on **predicting human emotions** from facial expressions using various **machine learning** and **deep learning** techniques. The goal is to classify different human emotions based on facial images. This project leverages a combination of:
 
