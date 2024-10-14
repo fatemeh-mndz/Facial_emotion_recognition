@@ -4,18 +4,31 @@
 
 
 
-## Model Performance Metrics
+## Handling Class Imbalance
 
-This section provides an overview of the performance metrics for various machine learning and deep learning models used in our projects. The metrics include accuracy and validation scores, which highlight the effectiveness of each model.
+In my analysis, I encountered a significant class imbalance within my dataset. To effectively address this issue, I implemented several strategies aimed at improving model performance and ensuring a more balanced representation of the classes. Among these strategies, **Focal Loss** emerged as the most effective approach, achieving the highest accuracy and validation scores.
 
-| **Model**                       | **Accuracy**       | **Validation Score** |
-|---------------------------------|--------------------|----------------------|
-| Random Forest (ML Algorithm)    | 99%                | 25%                  |
-| ANN (ML Algorithm)              | 91%                | 18%                  |
-| Deep Learning Model              | 40%                | 70%                  |
-| Transfer Learning (ResNet)      | 93%                | 90%                  |
-| Transfer Learning (VGG)         | 90%                | 78%                  |
+| **Model**      | **Strategy for Addressing Class Imbalance** | **Accuracy** | **Validation Score** | **Performance Level**       | **Epochs** | **Link**                                   |
+|----------------|---------------------------------------------|--------------|----------------------|------------------------------|------------|--------------------------------------------|
+| VGG 16        | Under Sampling                               | 68%          | 71%                  | Underfitting                 | 40         | [Link to Under Sampling](https://colab.research.google.com/drive/1S-IpCHDC5dsr19DOMJMuA7ZB3rAB-z3g#scrollTo=LRS8wWAuXI-1)                        |
+| VGG 16        | ✅**Focal Loss**                               | **80%**      | **81%**              | **Good Performance**         | 40         | [Link to Focal Loss](https://your-link-here)                        |
+| Resnet_50      | Class Weights                                | 40%          | 100%                 | Overfitting                  | 40         | [Class Weights with ResNet-50](https://your-link-here)        |
+| VGG 16        | Over Sampling                                | 62%          | 100%                 | Overfitting                  | 40         | [Link to Over Sampling](https://your-link-here)                        |
 
+### Key Insights
+- **Focal Loss** demonstrated superior performance in addressing class imbalance, as reflected in its accuracy and validation scores. This approach proved to be instrumental in improving the model's ability to learn from the minority class effectively.
+
+
+
+### Strategy Explanations
+
+- **Under Sampling**: This technique reduces the number of instances in the majority class to balance the dataset. While it can help mitigate class imbalance, it may lead to underfitting, as potentially valuable information from the majority class is discarded.
+
+- **Focal Loss**: Focal loss is an adjustment to the standard loss function that focuses more on difficult-to-classify examples, thereby improving performance on the minority class. This strategy helps to reduce the bias toward the majority class during training.
+
+- **Class Weights**: This approach assigns higher weights to instances of the minority class during training, effectively penalizing the model more for misclassifying these instances. While it can improve the performance on the minority class, it can also lead to overfitting if the weights are not carefully managed.
+
+- **Over Sampling**: Over sampling increases the number of instances in the minority class, often by duplicating existing instances. This can help the model learn better representations of the minority class but may also lead to overfitting if the duplicated samples are not varied enough.
 
 
 
