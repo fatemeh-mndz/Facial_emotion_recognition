@@ -6,18 +6,16 @@
 
 ## Handling Class Imbalance
 
-In my analysis, I encountered a significant class imbalance within my dataset. To effectively address this issue, I implemented several strategies aimed at improving model performance and ensuring a more balanced representation of the classes. Among these strategies, **Focal Loss** emerged as the most effective approach, achieving the highest accuracy and validation scores.
+In my analysis, I encountered a significant class imbalance within my dataset. To effectively address this issue, I implemented several strategies aimed at improving model performance and ensuring a more balanced representation of the classes. 
+It is important to note that the dataset quality was not ideal, which likely contributed to unusually high validation accuracy scores (up to 100%) in some cases. This suggests potential issues with overfitting, despite efforts to mitigate class imbalance.
 
-| **Model**      | **Strategy for Addressing Class Imbalance** | **Accuracy** | **Validation Score** | **Performance Level**       | **Epochs** |
-|----------------|---------------------------------------------|--------------|----------------------|------------------------------|------------|
-| VGG 16        | Under Sampling                               | 68%          | 71%                  | Underfitting                 | 40         |
-| VGG 16        | ✅ **Focal Loss**                           | **80%**      | **81%**              | **Good Performance**         | 40         |
-| Resnet_50      | Class Weights                                | 31%          | 100%                 | Overfitting                  | 40         |
-| VGG 16        | Over Sampling                                | 62%          | 100%                 | Overfitting                  | 40         |
+| **Model**      | **Strategy for Addressing Class Imbalance** | **Accuracy** | **Validation Score** | **Epochs** |
+|----------------|---------------------------------------------|--------------|----------------------|------------|
+| VGG 16        | Under Sampling                               | 68%          | 71%                  | 40         |
+| VGG 16        | Focal Loss                                   | 80%          | 81%                  | 40         |
+| Resnet_50      | Class Weights                                | 31%          | 100%                 | 40         |
+| VGG 16        | Over Sampling                                | 62%          | 100%                 | 40         |
 
-
-### Key Insights
-- **Focal Loss** demonstrated superior performance in addressing class imbalance, as reflected in its accuracy and validation scores. This approach proved to be instrumental in improving the model's ability to learn from the minority class effectively.
 
 
 
